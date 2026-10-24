@@ -1,0 +1,6 @@
+---
+fixes:
+  - |
+    A plain callable stop strategy can now be combined with another stop
+    strategy from either side of ``|`` and ``&``. ``callable | stop_after_attempt(3)``
+    raised ``TypeError`` while the mirrored order worked.
